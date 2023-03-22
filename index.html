@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de faltas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section>
+        <h1>Calculadora de faltas</h1>
+        <form action="" method="post" id="form">
+            <div>
+                <label for="method1">Calcular créditos</label>
+                <input type="radio" name="metodo" id="method1" value="metodo1" onchange="opcao(this)" checked>
+                <label for="method2">Fornecer créditos</label>
+                <input type="radio" name="metodo" id="method2" value="metodo2" onchange="opcao(this)">
+            </div>
+            <div class="calcular">
+                <div>
+                    <label for="semanas">Semanas letivas:</label>
+                    <input type="number" name="semanas" id="semanas">
+                </div>
+                <div>
+                    <label for="creditos">Créditos por semana:</label>
+                    <input type="number" name="creditos" id="creditos">
+                </div>
+            </div>
+            <div class="dado">
+                <label for="total">Créditos totais da disciplina:</label>
+                <input type="number" name="total" id="total">
+            </div>
+            <button type="submit">Calcular</button> <br>
+        </form>
+        <div class="res">
+
+        </div>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>

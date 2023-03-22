@@ -1,0 +1,23 @@
+<html>
+    <body>
+    <div id="container">
+    <p>Select your preferred contact method:</p>
+    <div>
+        <input type="radio" id="email" name="contact" value="email" onchange="getValue(this)">
+        <label for="email">Email</label>
+ 
+        <input type="radio" id="phone" name="contact" value="phone" onchange="getValue(this)">
+        <label for="phone">Phone</label>
+ 
+        <input type="radio" id="mail" name="contact" value="mail" onchange="getValue(this)">
+        <label for="mail">Mail</label>
+    </div>
+    </div>
+    </body>
+ 
+    <script>
+    function getValue(radio) {
+        alert(radio.value);
+    }
+    </script>
+</html>
