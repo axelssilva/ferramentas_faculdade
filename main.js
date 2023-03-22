@@ -22,14 +22,14 @@ formulario.addEventListener('submit', function(e) {
     let semanas = Number(formulario.querySelector('#semanas').value)
     let creditosSemana = Number(formulario.querySelector('#creditos').value)
     let crediSemana = semanas * creditosSemana
-    let creditoSemestre = Number(formulario.querySelector('#total'))
+    let creditoSemestre = Number(formulario.querySelector('#total').value)
     let total = 0
-
-    const paragrafo = criarP()
     
     if (crediSemana > total) {
         total = crediSemana
-    } else if (creditoSemestre > total) {
+    } 
+    
+    if (creditoSemestre > total) {
         total = creditoSemestre
     }
 
